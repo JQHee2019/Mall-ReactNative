@@ -11,7 +11,9 @@ import {
 export default class FunctionPage extends Component<Props>  {
     render() {
         return (
-            <View>首页</View>
+            <View> 
+                <Text>个人中心</Text>
+            </View>
         );
     }
 }

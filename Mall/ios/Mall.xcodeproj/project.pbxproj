@@ -60,6 +60,7 @@
 		5E6A0B1922E1A60F005A0C69 /* libReact-jsiexecutor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsiexecutor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6A0B1B22E1A613005A0C69 /* libReact-jsinspector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsinspector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6A0B1D22E1B834005A0C69 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = bundle/main.jsbundle; sourceTree = "<group>"; };
+		5E6A0B1F22E1C099005A0C69 /* libReact-RCTLinking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTLinking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C90406384AEB91605C0DCD /* libPods-MallTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MallTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84677DEA9F89CE2BD2EF8E7C /* Pods-Mall-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mall-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Mall-tvOSTests/Pods-Mall-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9894532DD0C092863BE487CF /* libPods-Mall-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mall-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +145,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E6A0B1F22E1C099005A0C69 /* libReact-RCTLinking.a */,
 				5E6A0B1B22E1A613005A0C69 /* libReact-jsinspector.a */,
 				5E6A0B1922E1A60F005A0C69 /* libReact-jsiexecutor.a */,
 				5E6A0B1722E1A607005A0C69 /* libReact-jsi.a */,

@@ -11,7 +11,9 @@ import {
 export default class MinePage extends Component<Props>  {
     render() {
         return (
-            <View>个人中心</View>
+            <View> 
+                <Text>个人中心</Text>
+            </View>
         );
     }
 }

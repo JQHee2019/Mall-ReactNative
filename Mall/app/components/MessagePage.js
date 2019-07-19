@@ -11,7 +11,9 @@ import {
 export default class MessagePage extends Component<Props>  {
     render() {
         return (
-            <View>消息</View>
+            <View> 
+             <Text>个人中心</Text>
+            </View>
         );
     }
 }

@@ -8,7 +8,7 @@ import {
 
 import TabIcon from '../components/widgets/TabIcon'
 
-import MessageListPage from '../components/MessagePage'
+import MessagePage from '../components/MessagePage'
 import FunctionPage from '../components/FunctionPage'
 import MinePage from '../components/MinePage'
 import ServerPage from '../components/ServerPage'
@@ -16,7 +16,7 @@ import ServerPage from '../components/ServerPage'
 const MyTab = createBottomTabNavigator(
     {
         Message: {
-            screen: MessageListPage,
+            screen: MessagePage,
             navigationOptions: {
                 tabBarLabel: '消息',
                 tabBarIcon:({focused}) => (
@@ -65,8 +65,8 @@ const MyTab = createBottomTabNavigator(
         },
     },
     {
-        initialRouteName: 'Home',
-        order: ['Message', 'Home', 'Mine'],
+        initialRouteName: 'Function',
+        order: ['Message', 'Function', 'Server', 'Mine'],
         tabBarOptions: {
             activeTintColor: '#333333',
             inactiveTintColor: '#cccccc',

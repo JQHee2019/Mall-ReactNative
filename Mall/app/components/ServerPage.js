@@ -11,7 +11,9 @@ import {
 export default class ServerPage extends Component<Props>  {
     render() {
         return (
-            <View>客服</View>
+            <View> 
+                <Text>个人中心</Text>
+            </View>
         );
     }
 }
