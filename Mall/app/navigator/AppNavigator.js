@@ -16,7 +16,8 @@ import WelcomePage from '../components/WelcomePage';
 import MainPage from '../components/MainPage';
 
 // 单个页面配置model动画
-import StackViewStyleInterpolator from 'react-navigation-stack/dist/views/StackView/StackViewStyleInterpolator';
+import StackViewStyleInterpolator from 'react-navigation-stack/lib/module/views/StackView/StackViewStyleInterpolator'
+// 'react-navigation-stack/dist/views/StackView/StackViewStyleInterpolator';
 
 // 设置是否以modal动画弹窗
 const IOS_MODAL_ROUTES = ['Login'];

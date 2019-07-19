@@ -43,7 +43,7 @@ class TabIcon extends Component {
             return (
                 <View style={styles.centered}>
                     <Image 
-                        source={require('../../imgs/default_img.png')}                            
+                        source={require('../../images/default_img.png')}                            
                         resizeMode={"contain"}
                         style={{width: Constant.tabIconSize, height: Constant.tabIconSize}}/>
                 </View>
@@ -52,7 +52,7 @@ class TabIcon extends Component {
             return (
                 <View style={styles.centered}>
                     <Image 
-                        source={require('../../imgs/default_img.png')}                            
+                        source={require('../../images/default_img.png')}                            
                         resizeMode={"contain"}
                         style={{width: Constant.tabIconSize, height: Constant.tabIconSize}}/>
                 </View>

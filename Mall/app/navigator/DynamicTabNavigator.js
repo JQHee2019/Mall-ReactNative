@@ -6,7 +6,7 @@ import {
     createStackNavigator
 } from 'react-navigation'
 
-import TabIcon from '../components/widget/TabIcon'
+import TabIcon from '../components/widgets/TabIcon'
 
 import MessageListPage from '../components/MessagePage'
 import FunctionPage from '../components/FunctionPage'
@@ -40,7 +40,7 @@ const MyTab = createBottomTabNavigator(
             }
         },
         Server: {
-            screen: MinePage,
+            screen: ServerPage,
             navigationOptions: {
                 tabBarLabel: '客服',
                 tabBarIcon:({focused}) => (

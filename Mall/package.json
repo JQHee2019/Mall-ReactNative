@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "prop-types": "15.7.2",
-    "react": "16.8.6",
+    "react": "16.8.3",
     "react-native": "0.60.4",
     "react-native-gesture-handler": "^1.2.1",
     "react-native-htmlview": "^0.14.0",
@@ -33,8 +33,8 @@
     "jest": "^24.8.0",
     "babel-cli": "^6.11.4",
     "babel-preset-react-native": "4.0.1",
-    "metro-react-native-babel-preset": "^0.55.0",
-    "react-test-renderer": "16.8.6"
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3"
   },
   "jest": {
     "preset": "react-native"

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, TouchableHighlight} from 'react-native';
-import HttpUtil from '../net/HttpUtil';
-import * as API from '../net/API'
+// import HttpUtil from '../net/HttpUtil';
+// import * as API from '../net/API'
 import NavigationUtil from '../navigator/NavigationUtil'
 
 
@@ -33,16 +33,16 @@ export default class  WelcomePage extends Component<Props>  {
         );
       }
 
-      _testNetwork() {
-        let params = new FormData()
-        params.append("name", "");
+      // _testNetwork() {
+      //   let params = new FormData()
+      //   params.append("name", "");
 
-        HttpUtil.get(API.BASE_URL, params, null).then((result) => {
-            Console.log(result);
-        }).catch((err) => {
-            Console.log(err);
-        });
-      }
+      //   HttpUtil.get(API.BASE_URL, params, null).then((result) => {
+      //       Console.log(result);
+      //   }).catch((err) => {
+      //       Console.log(err);
+      //   });
+      // }
 }
 
 const styles = StyleSheet.create({
