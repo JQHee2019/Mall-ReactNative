@@ -28,7 +28,7 @@ export default class NavigationUtil{
      * 重置到首页
      * @param navigation
      */
-    static resetToHomePage(params) {
+    static resetToMainPage(params) {
         const {navigation} = params;
         navigation.navigate("Main");
     }

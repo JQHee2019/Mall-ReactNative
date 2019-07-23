@@ -68,9 +68,11 @@ const InitNavigator = createStackNavigator({
   /**
    * 如果是需要登录才能进入app 在这里添加导航
    */
-  export const RootNavigator = createSwitchNavigator({
+  const RootNavigator = createSwitchNavigator({
     Init: InitNavigator,
     Main: MainNavigator
+  }, {
+    initialRouteName: 'Init'
   });
   
 
@@ -89,7 +91,9 @@ const InitNavigator = createStackNavigator({
   export default connect(mapStateToProps)(AppWithNavigationState);
   */
 
- export default APPContainer =  createAppContainer(RootNavigator);
+const APPContainer =  createAppContainer(RootNavigator);
+
+ export default APPContainer
 
 /*
   class APP extends Component {

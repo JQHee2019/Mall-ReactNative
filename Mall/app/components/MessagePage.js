@@ -22,7 +22,7 @@ import ViewUtils from '../utils/ViewUtils'
 /**
  * 样式和常量
  */
-import styles from '../styles'
+import gStyles  from '../styles'
 import * as Constant from '../styles/constant'
 
 /**

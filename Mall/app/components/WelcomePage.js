@@ -16,16 +16,16 @@ export default class  WelcomePage extends Component<Props>  {
   }
     componentDidMount() {
         // this._testNetwork();
-        // NavigationUtil.resetToHomePage({
-        //   navigation: this.props.navigation
-        // });
+        NavigationUtil.resetToMainPage({
+          navigation: this.props.navigation
+        });
     }
 
     render() {
         return (
           <View style={styles.container}>
             <TouchableHighlight onPress={() => {
-                    NavigationUtil.resetToHomePage({
+                    NavigationUtil.resetToMainPage({
                       navigation: this.props.navigation
                     });
             }}>
