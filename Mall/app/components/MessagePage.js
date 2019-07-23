@@ -8,11 +8,15 @@ import {
     StyleSheet
 } from 'react-native'
 
+
+/**
+ * 消息页面 
+*/
 export default class MessagePage extends Component<Props>  {
     render() {
         return (
             <View> 
-             <Text>个人中心</Text>
+             <Text>消息中心</Text>
             </View>
         );
     }

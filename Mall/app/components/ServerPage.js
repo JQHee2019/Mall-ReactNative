@@ -8,11 +8,15 @@ import {
     StyleSheet
 } from 'react-native'
 
+/**
+ * 客服页面
+ */
+
 export default class ServerPage extends Component<Props>  {
     render() {
         return (
             <View> 
-                <Text>个人中心</Text>
+                <Text>客服</Text>
             </View>
         );
     }

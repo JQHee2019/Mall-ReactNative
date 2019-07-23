@@ -7,7 +7,7 @@ RN 0.6之后的版本
 react-native link react-native-gesture-handler
 
 iOS: pod install 
-Android： 需要在工程中添加初始化配置
+Android： 需要在工程中添加手势初始化配置
 link完成之后需要重新打包
 ```
 

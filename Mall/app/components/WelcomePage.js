@@ -11,11 +11,14 @@ import NavigationUtil from '../navigator/NavigationUtil'
 type Props = {};
 export default class  WelcomePage extends Component<Props>  {
 
+  constructor(props) {
+    super(props)
+  }
     componentDidMount() {
         // this._testNetwork();
-        NavigationUtil.resetToHomePage({
-          navigation: this.props.navigation
-        });
+        // NavigationUtil.resetToHomePage({
+        //   navigation: this.props.navigation
+        // });
     }
 
     render() {

@@ -8,11 +8,15 @@ import {
     StyleSheet
 } from 'react-native'
 
+/**
+ * 登录页面
+*/
+
 export default class LoginPage extends Component<Props>  {
     render() {
         return (
             <View> 
-                <Text>个人中心</Text>
+                <Text>登录页面</Text>
             </View>
         );
     }

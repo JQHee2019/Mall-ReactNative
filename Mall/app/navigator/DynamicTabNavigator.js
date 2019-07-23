@@ -22,7 +22,7 @@ const MyTab = createBottomTabNavigator(
                 tabBarIcon:({focused}) => (
                     <TabIcon
                         focused={focused}
-                        tabIconName={'消息'}
+                        tabIconName={'message'}
                     />
                 )
             }
@@ -34,7 +34,7 @@ const MyTab = createBottomTabNavigator(
                 tabBarIcon:({focused}) => (
                     <TabIcon
                         focused={focused}
-                        tabIconName={'首页'}
+                        tabIconName={'function'}
                     />
                 )
             }
@@ -46,7 +46,7 @@ const MyTab = createBottomTabNavigator(
                 tabBarIcon:({focused}) => (
                     <TabIcon
                         focused={focused}
-                        tabIconName={'客服'}
+                        tabIconName={'customerservice'}
                     />
                 )
             }
@@ -58,7 +58,7 @@ const MyTab = createBottomTabNavigator(
                 tabBarIcon:({focused}) => (
                     <TabIcon
                         focused={focused}
-                        tabIconName={'我的'}
+                        tabIconName={'mine'}
                     />
                 )
             }
