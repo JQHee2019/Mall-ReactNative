@@ -43,30 +43,30 @@ class TabIcon extends Component {
         switch (this.props.tabIconName) {
             case 'message': 
                 if (this.props.focused) {
-                    icon =require('../../images/tabbar_message_h_b.png')
+                    icon = require('../../images/tabbar_message_h_b.png')
                 } else {
-                    icon =require('../../images/tabbar_message_n.png')
+                    icon = require('../../images/tabbar_message_n.png')
                 }
             break;
             case 'function': 
                 if (this.props.focused) {
-                    icon =require('../../images/tabbar_function_h_b.png')
+                    icon = require('../../images/tabbar_function_h_b.png')
                 } else {
-                    icon =require('../../images/tabbar_function_n.png')
+                    icon = require('../../images/tabbar_function_n.png')
                 }
             break;
             case 'customerservice': 
                 if (this.props.focused) {
-                    icon =require('../../images/tabbar_customerservice_h_b.png')
+                    icon = require('../../images/tabbar_customerservice_h_b.png')
                 } else {
-                    icon =require('../../images/tabbar_customerservice_n.png')
+                    icon = require('../../images/tabbar_customerservice_n.png')
                 }
             break;
             case 'mine': 
             if (this.props.focused) {
-                icon =require('../../images/tabbar_mine_h_b.png')
+                icon = require('../../images/tabbar_mine_h_b.png')
             } else {
-                icon =require('../../images/tabbar_mine_n.png')
+                icon = require('../../images/tabbar_mine_n.png')
             }
             break;
         }
