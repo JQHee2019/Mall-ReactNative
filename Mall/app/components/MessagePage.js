@@ -47,7 +47,7 @@ export default class MessagePage extends Component<Props>  {
      */
     _renderRow(item) {
         return (
-            <MessageCell title={item}/>
+            <MessageCell title={'12'}/>
         );
     }
 
@@ -112,22 +112,25 @@ export default class MessagePage extends Component<Props>  {
     render() {
         return (
             <SafeAreaViewPlus 
-            style={styles.container}
-            topColor={Constant.primaryColor}> 
-                <StatusBar hidden={false} backgroundColor={Constant.primaryColor} translucent
-                        barStyle={'light-content'}/>
+              style={styles.container}
+              topColor={Constant.primaryColor}> 
+                <StatusBar 
+                  hidden={false} 
+                  backgroundColor={Constant.primaryColor} 
+                  translucent
+                  barStyle={'light-content'}/>
                 <NavigationBar title={'首页'}></NavigationBar>
                 <RefreshListView
-                data={this.state.dataList}
-                renderItem={this._renderRow}
-                keyExtractor={this._keyExtractor}
-                refreshState={this.state.refreshState}
-                onHeaderRefresh={this._requestData}
-                onFooterRefresh={this._requestMoreData}
-                footerRefreshingText='玩命加载中 >.<'
-                footerFailureText='加载失败了 =.=!'
-                footerNoMoreDataText='-我是有底线的-'
-                footerEmptyDataText='-好像什么东西都没有-'/>
+                  data={this.state.dataList}
+                  renderItem={this._renderRow}
+                  keyExtractor={this._keyExtractor}
+                  refreshState={this.state.refreshState}
+                  onHeaderRefresh={this._requestData}
+                  onFooterRefresh={this._requestMoreData}
+                  footerRefreshingText='玩命加载中 >.<'
+                  footerFailureText='加载失败了 =.=!'
+                  footerNoMoreDataText='-我是有底线的-'
+                  footerEmptyDataText='-好像什么东西都没有-'/>
             </SafeAreaViewPlus>
         );
     }

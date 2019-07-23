@@ -22,6 +22,7 @@ export default class  WelcomePage extends Component<Props>  {
     }
 
     render() {
+      
         return (
           <View style={styles.container}>
             <TouchableHighlight onPress={() => {

@@ -31,10 +31,13 @@ export default class ServerPage extends Component<Props>  {
     render() {
         return (
             <SafeAreaViewPlus 
-            style={styles.container}
-            topColor={Constant.primaryColor}> 
-                <StatusBar hidden={false} backgroundColor={Constant.primaryColor} translucent
-                        barStyle={'light-content'}/>
+                style={styles.container}
+                topColor={Constant.primaryColor}> 
+                <StatusBar 
+                    hidden={false} 
+                    backgroundColor={Constant.primaryColor} 
+                    translucent
+                    barStyle={'light-content'}/>
                 <NavigationBar title={'客服'}></NavigationBar>
                 <WebView source={{ uri: 'https://facebook.github.io/react-native/' }} />
     )

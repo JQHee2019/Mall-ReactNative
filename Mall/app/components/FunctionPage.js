@@ -29,10 +29,13 @@ export default class FunctionPage extends Component<Props>  {
     render() {
         return (
             <SafeAreaViewPlus 
-            style={styles.mainBox}
-            topColor={Constant.primaryColor}> 
-                <StatusBar hidden={false} backgroundColor={Constant.primaryColor} translucent
-                        barStyle={'light-content'}/>
+                style={styles.mainBox}
+                topColor={Constant.primaryColor}> 
+                <StatusBar 
+                    hidden={false} 
+                    backgroundColor={Constant.primaryColor} 
+                    translucent
+                    barStyle={'light-content'}/>
                 <NavigationBar title={'首页'}></NavigationBar>
             </SafeAreaViewPlus>
         );

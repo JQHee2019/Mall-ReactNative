@@ -94,5 +94,4 @@ class DynamicTabNavigator extends Component {
         )
     }
 }
-  
-  export default DynamicTabNavigator
+export default DynamicTabNavigator
