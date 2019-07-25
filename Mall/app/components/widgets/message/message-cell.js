@@ -42,7 +42,9 @@ export default class MessageCell extends Component {
 
 var styles = StyleSheet.create({
     content: {
-        padding: 15
+        padding: 15,
+        borderBottomColor: '#dddddd',
+        borderBottomWidth: 0.5
     },
     title: {
         color: '#333333',

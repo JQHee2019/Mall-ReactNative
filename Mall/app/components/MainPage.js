@@ -6,6 +6,7 @@ import DynamicTabNavigator from '../navigator/DynamicTabNavigator';
 import {connect} from 'react-redux';
 
 type Props = {};
+
 class MainPage extends Component<Props> {
 
   constructor(props) {
