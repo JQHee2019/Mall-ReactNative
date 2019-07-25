@@ -141,7 +141,6 @@ export default class MessagePage extends Component<Props>  {
     }
 }
 
-// flatList 底部方法重复触发解决： https://www.jianshu.com/p/7749ec2b13c2
 var styles = StyleSheet.create({
     container: {
         flex: 1
