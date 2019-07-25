@@ -62,9 +62,11 @@ const defaultProps = {
 
 class RefreshListView extends PureComponent {
 
+  /*
   componentWillReceiveProps(nextProps) {
     log('[RefreshListView]  RefreshListView componentWillReceiveProps ' + nextProps.refreshState)
   }
+  */
 
   componentDidUpdate(prevProps, prevState) {
     log('[RefreshListView]  RefreshListView componentDidUpdate ' + prevProps.refreshState)

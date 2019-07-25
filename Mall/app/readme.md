@@ -13,6 +13,7 @@ link完成之后需要重新打包
 
 常用的第三方组件
 ```
+图片缓存框架：react-native-img-cache
 "@react-native-community/async-storage": "^1.4.0",
 "react": "16.8.3",
 "react-native": "0.59.5",
