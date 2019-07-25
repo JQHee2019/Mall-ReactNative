@@ -7,7 +7,7 @@ import {
     SafeAreaView,
     ScrollView,
     StyleSheet,
-    TouchableHighlight
+    TouchableOpacity
 } from 'react-native'
 import PropTypes from 'prop-types'
 
@@ -28,13 +28,14 @@ export default class MessageCell extends Component {
     render() {
         let { callBack, title } = this.props
         return(
-            <TouchableHighlight 
-            style={styles.content} 
-            onPress={() => {
-                callBack && callBack(title)
-            }}>
+            <TouchableOpacity
+                activeOpacity={0.5} 
+                style={styles.content} 
+                onPress={() => {
+                    callBack && callBack(title)
+                }}>
                 <Text style={styles.title}>{title}</Text>
-            </TouchableHighlight>
+            </TouchableOpacity>
         );
     }
 }

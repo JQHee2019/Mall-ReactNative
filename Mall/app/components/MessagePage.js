@@ -9,7 +9,8 @@ import {
 } from 'react-native'
 import { PropTypes } from 'prop-types'
 
-import RefreshListView, { RefreshState } from 'react-native-refresh-list-view'
+// import RefreshListView, { RefreshState } from 'react-native-refresh-list-view'
+import RefreshListView, { RefreshState } from './common/RefreshListView'
 import MessageCell from './widgets/message/message-cell'
 
 /**
@@ -37,6 +38,7 @@ export default class MessagePage extends Component<Props>  {
         this._requestMoreData = this._requestMoreData.bind(this)
         this._keyExtractor = this._keyExtractor.bind(this)
         this.state = {
+            isEnd: false,
             dataList: [],
             refreshState: RefreshState.Idle,
           }
@@ -70,6 +72,7 @@ export default class MessagePage extends Component<Props>  {
          var dataList = ['测试', '测试一', '测试二'] 
 
           this.setState({
+            isEnd: true,
             dataList: dataList,
             refreshState: dataList.length < 1 ? RefreshState.EmptyData : RefreshState.Idle,
           })
@@ -99,6 +102,7 @@ export default class MessagePage extends Component<Props>  {
             refreshState: dataList.length > 50 ? RefreshState.NoMoreData : RefreshState.Idle,
           })
         }, 2000)
+
     }
 
     _keyExtractor(item, index) {
@@ -121,6 +125,7 @@ export default class MessagePage extends Component<Props>  {
                   barStyle={'light-content'}/>
                 <NavigationBar title={'首页'}></NavigationBar>
                 <RefreshListView
+                  isEnd={this.state.isEnd}
                   data={this.state.dataList}
                   renderItem={this._renderRow}
                   keyExtractor={this._keyExtractor}
@@ -136,6 +141,7 @@ export default class MessagePage extends Component<Props>  {
     }
 }
 
+// flatList 底部方法重复触发解决： https://www.jianshu.com/p/7749ec2b13c2
 var styles = StyleSheet.create({
     container: {
         flex: 1

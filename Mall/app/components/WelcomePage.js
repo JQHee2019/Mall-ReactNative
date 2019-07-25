@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, TouchableHighlight} from 'react-native';
+import {Platform, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 // import HttpUtil from '../net/HttpUtil';
 // import * as API from '../net/API'
 import NavigationUtil from '../navigator/NavigationUtil'
@@ -25,13 +25,15 @@ export default class  WelcomePage extends Component<Props>  {
       
         return (
           <View style={styles.container}>
-            <TouchableHighlight onPress={() => {
-                    NavigationUtil.resetToMainPage({
-                      navigation: this.props.navigation
-                    });
-            }}>
+            <TouchableOpacity 
+              activeOpacity={0.5}
+              onPress={() => {
+                      NavigationUtil.resetToMainPage({
+                        navigation: this.props.navigation
+                      });
+              }}>
               <Text style={styles.welcome}>Welcome!</Text>
-            </TouchableHighlight>
+            </TouchableOpacity>
             
           </View>
         );
