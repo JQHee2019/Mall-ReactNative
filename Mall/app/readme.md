@@ -45,3 +45,5 @@ link完成之后需要重新打包
 "redux-thunk": "^2.3.0",
 "rn-global-modal": "^1.0.3"
 ```
+
+指纹识别：https://github.com/hieuvp/react-native-fingerprint-scanner
